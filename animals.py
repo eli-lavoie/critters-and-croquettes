@@ -2,37 +2,42 @@ from datetime import date
 
 #Land Animals
 class Pangolin:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
         self.walking = True
 
 class Hedgehog:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
         self.walking = True
 
 class Echidna:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
         self.walking = True
 
 class Fox:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
         self.walking = True
 
 class Capybara:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
+        self.shift = shift
         self.date_added = date.today()
         self.walking = True
 
@@ -109,22 +114,21 @@ class Taipan:
         self.sliterhing = True
 
 #Creation Time
-pango = Pangolin()
-sonic = Hedgehog()
-yusuke = Fox()
-knuckles = Echidna()
-captain_america = Capybara()
+pango = Pangolin("Pango", "pangolin", "evening")
+sonic = Hedgehog("Sonic", "hedgehog", "morning")
+yusuke = Fox("Yusuke", "fox", "afternoon")
+knuckles = Echidna("Knuckles", "echidna", "morning")
+captain_america = Capybara("Captain America", "capybara", "evening")
 
-axl_rose = Axolotl()
-kai = Koi()
-sparky = Eel()
-brains = Goldfish()
-riley = Tuna()
+axl_rose = Axolotl("Axl Rose", "axolotl")
+kai = Koi("Kai", "koi fish")
+sparky = Eel("Sparky", "eel")
+brains = Goldfish("Brains", "goldfish")
+riley = Tuna("Riley", "tuna")
 
-jetbrain = Python()
-takamaki = Anaconda()
-number_five = Mamba()
-kai_but_funnier = Cobra()
-numba_one = Taipan()
+jetbrain = Python("JetBrain", "python")
+takamaki = Anaconda("Takamaki", "anaconda")
+number_five = Mamba("Number Five", "mamba")
+kai_but_funnier = Cobra("Kai but Funnier", "cobra")
+numba_one = Taipan("Numba One", "taipan")
 
-print(numba_one)
