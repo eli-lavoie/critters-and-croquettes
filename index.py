@@ -26,7 +26,7 @@ from attractions import Wetlands
 
 #ANCHOR Create land animals 
 pango = Pangolin("Pango", "pangolin", "evening", "ants")
-sonic = Hedgehog("Sonic", "hedgehog", "morning", "golden rings")
+sonic = Hedgehog("Sonic", "hedgehog", "morning", "golden rings", 9876)
 yusuke = Fox("Yusuke", "fox", "afternoon", "Mystery Food X")
 knuckles = Echidna("Knuckles", "echidna", "morning", "golden rings")
 captain_america = Capybara("Captain America", "capybara", "evening", "freedom")
@@ -70,3 +70,5 @@ lazy_river.animals.append(sparky)
 lazy_river.animals.append(brains)
 lazy_river.animals.append(riley)
 lazy_river.animals.append(kai)
+
+print(pet_planet.last_animal_added)

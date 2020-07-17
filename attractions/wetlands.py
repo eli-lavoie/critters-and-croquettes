@@ -14,3 +14,7 @@ class Wetlands:
     
     def __str__(self):
         return self.description
+    
+    @property
+    def last_animal_added(self):
+        return self.animals[-1]
